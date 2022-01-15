@@ -1,0 +1,16 @@
+2005-02-07  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/callbacks.c: 
+	
+	Corrected misspelling
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* src/interface.c, src/filebrowser.c, src/callbacks.c: 
+	
+	Changed strings to have first letters capitalized in GUI
+	
+	* ChangeLog: 
+	
+	Added it to track changes
+

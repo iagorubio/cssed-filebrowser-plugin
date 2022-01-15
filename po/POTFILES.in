@@ -1,0 +1,8 @@
+src/interface.c
+src/callbacks.c
+src/filebrowser.c
+src/interface.h
+src/callbacks.h
+src/filebrowser.h
+src/editlist.c
+src/editlist.h

@@ -1,0 +1,320 @@
+# French translation of cssed-filebrowser-plugin.
+# Copyright (C) 2004-2005, Iago Rubio
+# This file is distributed under the same license as the cssed package.
+# Michèle Garoche <michele.garoche@easyconnect.fr>, 2004-2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cssed-filebrowser-plugin-0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-05-31 19:34+0200\n"
+"PO-Revision-Date: 2005-12-23 11:11+0100\n"
+"Last-Translator: Michèle Garoche <michele.garoche@easyconnect.fr>\n"
+"Language-Team: French <gnomefr@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/interface.c:106 src/interface.c:107
+msgid "Go to the selected directory"
+msgstr "Aller dans le répertore sélectionné"
+
+#: src/interface.c:121
+msgid "Go"
+msgstr "Aller"
+
+#: src/interface.c:153
+msgid "Directories"
+msgstr "Répertoires"
+
+#: src/interface.c:186 src/filebrowser.c:75
+msgid "Files"
+msgstr "Fichiers"
+
+#: src/interface.c:219
+msgid "Filter"
+msgstr "Filtre"
+
+#: src/interface.c:232
+msgid "Clear the filter"
+msgstr "Effacer le filtre"
+
+#: src/interface.c:233
+msgid "This button will clear the filter in any"
+msgstr "Ce bouton effacera le filtre"
+
+#: src/interface.c:241
+msgid "Enter a pattern to filter as *.css"
+msgstr "Saisissez un masque de filtre tel que *.css"
+
+#: src/interface.c:242
+msgid ""
+"Enter a pattern to filter, it support globbing as *.css or single character "
+"matching as ?akefile. You cannot escape globs to include them"
+msgstr ""
+"Entrez un masque de filtre. Vous pouvez utiliser les caractères globaux de "
+"remplacement tel que *.css ou les caractères de remplacement unique comme ?"
+"akefile. Vous ne pouvez pas inclure ces caractères en tant que caractères "
+"normaux précédés d'une barre inclinée renversée."
+
+#: src/interface.c:248
+msgid "Show hidden"
+msgstr "Fichiers cachés"
+
+#: src/interface.c:253
+msgid "Show hidden files"
+msgstr "Afficher les fichiers cachés"
+
+#: src/interface.c:254
+msgid "When toggled you will be able to see the files hidden in the directory"
+msgstr ""
+"Quand le bouton est coché, vous pouvez voir les fichiers cachés dans le "
+"répertoire"
+
+#: src/interface.c:262
+msgid "Go to current document's directory"
+msgstr "Aller dans le répertoire du document actif"
+
+#: src/interface.c:263
+msgid "With this button you can move to the current document's directory"
+msgstr ""
+"Avec ce bouton, vous pouvez vous déplacer vers le répertoire du document "
+"actif"
+
+#: src/interface.c:274 src/editlist.c:379
+msgid "Edit the drop down list"
+msgstr "Modifier la liste déroulante"
+
+#: src/interface.c:275
+msgid ""
+"This button will show a dialog to let you edit the items in the upper drop "
+"down list (last opened directories history)"
+msgstr ""
+"Ce bouton affiche un dialogue de modification des éléments de la liste "
+"déroulante du haut (historique des répertoires récemment ouverts)"
+
+#: src/interface.c:288
+msgid "Go up one directory"
+msgstr "Aller dans le répertoire parent"
+
+#: src/interface.c:289
+msgid "With this button you can move to the parent directory if any"
+msgstr ""
+"Avec ce bouton, vous pouvez vous déplacer vers le répertoire parent s'il "
+"existe"
+
+#: src/interface.c:300
+msgid "Refresh the current directory"
+msgstr "Mettre à jour le répertoire courant"
+
+#: src/interface.c:301
+msgid "This button let you refresh - meaning re-read - the current directory"
+msgstr ""
+"Ce bouton vous permet de mettre à jour - c'est-à-dire de relire - le "
+"répertoire courant"
+
+#: src/interface.c:312
+msgid "Go to home"
+msgstr "Aller dans le répertoire utilisateur"
+
+#: src/interface.c:313
+msgid "With this button you can move to your home directory"
+msgstr ""
+"Avec ce bouton, vous pouvez vous déplacer vers votre répertoire utilisateur"
+
+#: src/interface.c:414
+msgid "File permisions"
+msgstr "Autorisations sur fichiers"
+
+#: src/interface.c:440
+msgid "<b>Owner:</b>"
+msgstr "<b>Propriétaire :</b>"
+
+#: src/interface.c:448
+msgid "<b>Group:</b>"
+msgstr "<b>Groupe :</b>"
+
+#: src/interface.c:456
+msgid "<b>Others:</b>"
+msgstr "<b>Autres :</b>"
+
+#: src/interface.c:464 src/interface.c:470 src/interface.c:476
+msgid "Read"
+msgstr "Lecture"
+
+#: src/interface.c:482 src/interface.c:488 src/interface.c:494
+msgid "Write"
+msgstr "Écriture"
+
+#: src/interface.c:500 src/interface.c:506 src/interface.c:512
+msgid "Execute"
+msgstr "Exécution"
+
+#: src/interface.c:526
+msgid "Set user ID"
+msgstr "Définir l'identifiant utilisateur"
+
+#: src/interface.c:530
+msgid "Set group ID"
+msgstr "Définir l'identifiant de groupe"
+
+#: src/interface.c:534
+msgid "Sticky"
+msgstr "Sticky"
+
+#: src/callbacks.c:268
+msgid "File not saved"
+msgstr "Fichier non enregistré"
+
+#: src/callbacks.c:268
+msgid ""
+"Cannot get the current document's directory\n"
+"this file is not saved on disk"
+msgstr ""
+"Impossible de trouver le répertoire du document actif\n"
+"ce fichier n'est pas enregistré sur le disque"
+
+#: src/callbacks.c:405
+msgid "Cannot open file"
+msgstr "Impossible d'ouvrir le fichier"
+
+#: src/callbacks.c:479
+#, c-format
+msgid ""
+"Are you sure you want to delete\n"
+"%s ?"
+msgstr ""
+"Voulez-vous vraiment supprimer\n"
+"%s ?"
+
+#: src/callbacks.c:491 src/callbacks.c:494
+msgid "Can not delete file"
+msgstr "Impossible de supprimer le fichier"
+
+#: src/callbacks.c:494 src/callbacks.c:571
+msgid ""
+"File does not exists on disk,\n"
+"please refresh the view."
+msgstr ""
+"Le fichier n'existe pas sur le disque,\n"
+"veuillez rafraîchir l'affichage."
+
+#: src/callbacks.c:568
+msgid "Enter new file name"
+msgstr "Saisissez le nom du nouveau fichier"
+
+#: src/callbacks.c:569
+msgid "Error renaming file"
+msgstr "Erreur lors de l'attribution d'un nouveau nom au fichier"
+
+#: src/callbacks.c:570
+msgid "Cannot rename file"
+msgstr "Impossible de renommer le fichier"
+
+#: src/callbacks.c:573
+msgid "Enter new directory name"
+msgstr "Saisissez le nom du nouveau répertoire"
+
+#: src/callbacks.c:575
+msgid "Error renaming file directory"
+msgstr "Erreur lors de l'attribution d'un nouveau nom au répertoire"
+
+#: src/callbacks.c:576
+msgid "Cannot rename directory"
+msgstr "Impossible de renommer le répertoire"
+
+#: src/callbacks.c:577
+msgid ""
+"Directory does not exists on disk,\n"
+"please refresh the view."
+msgstr ""
+"Le répertoire n'existe pas sur le disque,\n"
+"veuillez rafraîchir l'affichage."
+
+#: src/callbacks.c:696
+msgid "Cannot change permissions"
+msgstr "Impossible de changer les autorisations"
+
+#: src/callbacks.c:696
+#, c-format
+msgid ""
+"Unable to modify file permissions.\n"
+"\n"
+"%s\n"
+msgstr ""
+"Impossible de modifier les autorisations sur le fichier.\n"
+"\n"
+"%s\n"
+
+#: src/callbacks.c:705
+msgid "Cannot get file data"
+msgstr "Impossible d'accéder au contenu du fichier"
+
+#: src/callbacks.c:705
+#, c-format
+msgid ""
+"Unable to get file permissions.\n"
+"\n"
+"%s\n"
+msgstr ""
+"Impossible de lire les autorisations du fichier.\n"
+"\n"
+"%s\n"
+
+#. full_path = g_build_filename( curdir, file_name, NULL );
+#: src/callbacks.c:741
+msgid "Enter directory name"
+msgstr "Saisissez le nom du répertoire"
+
+#: src/callbacks.c:747
+msgid "This file already exists"
+msgstr "Ce fichier existe déjà"
+
+#: src/callbacks.c:747
+#, fuzzy, c-format
+msgid ""
+"This file exists on the system.\n"
+"%s\n"
+"\n"
+"Please use other name for the new directory"
+msgstr "Veuillez choisir un autre nom pour le nouveau répertoire"
+
+#: src/callbacks.c:761
+msgid "Directory creation error"
+msgstr "Erreur lors de la création du répertoire"
+
+#: src/callbacks.c:780 src/callbacks.c:808
+msgid "Copy path"
+msgstr "Copier le chemin"
+
+#: src/callbacks.c:785 src/callbacks.c:813
+msgid "Rename"
+msgstr "Renommer"
+
+#: src/callbacks.c:791 src/callbacks.c:818
+msgid "Change permissions"
+msgstr "Changer les autorisations"
+
+#: src/callbacks.c:827
+msgid "Create directory"
+msgstr "Créer un répertoire"
+
+#: src/filebrowser.c:42
+msgid "Filebrowser"
+msgstr "Navigateur de fichiers"
+
+#. the plugin name
+#: src/filebrowser.c:43
+msgid "Adds a file browser"
+msgstr "Ajoute un navigateur de fichiers"
+
+#: src/editlist.c:109
+msgid "Edit item"
+msgstr "Modifier l'élément"
+
+#: src/editlist.c:139
+msgid "Add an item"
+msgstr "Ajouter un élément"
+
+#~ msgid "This directory already exists"
+#~ msgstr "Ce répertoire existe déjà"

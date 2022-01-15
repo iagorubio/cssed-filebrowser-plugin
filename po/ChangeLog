@@ -1,0 +1,70 @@
+2005-12-23  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* fr.po, es.po, cssed-filebrowser-plugin.pot: 
+	
+	Updated according to changes in callbacks.src
+	fr.po translated
+	others are to be translated
+	
+
+2005-12-22  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* fr.po, cssed-filebrowser-plugin.pot: 
+	
+	Updated according to changes in the whole tree
+	fr.po translated
+	others are to be updated and translated
+	
+
+2005-02-07  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* fr.po: 
+	
+	Updated according to changes in source files and translated
+	
+	* es.po:
+	
+	Updated according to changes in source files but not translated
+	
+	* cssed-filebrowser-plugin.pot:
+	
+	Updated according to changes in source files
+	
+	* POTFILES.in
+	
+	Added editlist.c to the list of files to translate
+
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* fr.po: 
+	
+	Added missing > in email address Last Translator
+
+2004-09-09  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* es.po, fr.po: 
+	
+	Changed strings according to changes in source files
+	Added full name of package name
+	Created new pot file
+
+2004-09-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* es.po: 
+	
+	Change first line to reflect language translation and package name.
+	Added Language Team.
+	
+	* fr.po:
+	 
+	Change first line to reflect language translation and package name.
+	Added Language Team.
+	Corrected fuzzy string.
+
+2004-09-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* fr.po: 
+	
+	First translation
+

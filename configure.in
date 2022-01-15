@@ -1,0 +1,118 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(cssed-filebrowser-plugin, 0.2.2)
+AM_CONFIG_HEADER(config.h)
+AM_MAINTAINER_MODE
+
+AC_ISC_POSIX
+AC_PROG_CC
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+AC_CANONICAL_HOST
+
+dnl ************************
+dnl Checks for OS type
+dnl ************************
+case "${host}" in
+i[[3456]]86-*-linux-gnu*) 
+	OSTYPE="LINUX"
+	 ;;
+powerpc-apple-darwin*)
+	OSTYPE="DARWIN"
+	;; 
+esac
+
+AM_CONDITIONAL(ISDARWIN, test "$OSTYPE" = DARWIN)
+
+AC_MSG_CHECKING( if prefix is set )
+if test "${prefix}" = "NONE"; then
+ 	echo "no, setting default prefix /usr"
+ 	prefix="/usr";
+else
+	echo "yes ${prefix}"
+fi
+
+dnl We need to know the installed cssed's prefix to install the plugin
+cssedincludedir=`echo ${prefix}/include/cssed`
+AC_MSG_CHECKING( if cssed headers are installed in $cssedincludedir )
+if test -e $cssedincludedir/plugin.h; then
+ 	echo "yes"
+else
+ 	echo "no"
+ 	AC_MSG_ERROR( headers are not in $cssedincludedir/ please use the same prefix you used when cssed was installed )
+fi
+
+pkg_modules="cssed >= 0.4.0 gtk+-2.0 >= 2.2.0 glib-2.0 >= 2.0 gmodule-2.0 >= 2.0"
+PKG_CHECK_MODULES(PACKAGE, [$pkg_modules])
+AC_SUBST(PACKAGE_CFLAGS)
+AC_SUBST(PACKAGE_LIBS)
+
+dnl Define DARWIN at CFLAGS if it's OsX
+dnl ====================================
+if test "x$OSTYPE" = "xDARWIN";then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DDARWIN"
+fi
+
+dnl Check if gtk2 >=  2.2
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.2)
+if pkg-config gtk+-2.0 --atleast-version=2.2;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_2"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl Check if  gtk2 >=  2.4
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.4)
+if pkg-config gtk+-2.0 --atleast-version=2.4;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_4"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl Check if  gtk2 >=  2.6
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.6)
+if pkg-config gtk+-2.0 --atleast-version=2.6;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_6"
+	echo "yes"
+else
+	echo "no"
+fi
+
+dnl Check if  gtk2 >=  2.8
+dnl ====================
+AC_MSG_CHECKING(if gtk+2 is at least 2.8)
+if pkg-config gtk+-2.0 --atleast-version=2.8;
+then
+	PACKAGE_CFLAGS="$PACKAGE_CFLAGS -DGTK_ATLEAST_2_8"
+	echo "yes"
+else
+	echo "no"
+fi
+
+GETTEXT_PACKAGE=cssed-filebrowser-plugin
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="es fr"
+AM_GLIB_GNU_GETTEXT
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+po/Makefile.in
+])
+
+
+
+
+

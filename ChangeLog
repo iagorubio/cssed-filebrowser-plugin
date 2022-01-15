@@ -1,0 +1,11 @@
+2004-09-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* configure.in: 
+	
+	Changed revision, since there are new files in src
+	
+2004-09-01  Michèle Garoche <michele.garoche@easyconnect.fr>
+
+	* configure.in: 
+	
+	Added fr to ALL_LINGUAS
